@@ -1,0 +1,49 @@
+﻿/*http://simplebits.com (modified for Firefox) */
+#container
+{
+	width: 700px;	
+	padding-bottom: 10px;
+	background: #fff;
+}
+
+#tabnav
+{
+	overflow:auto; clear:both; zoom:1;
+	margin: 0;
+	padding:0; 
+	padding-left: 10px;
+	background: url( images/tab_bottom.gif ) repeat-x bottom;
+}
+
+#tabnav li
+{
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+}
+
+#tabnav a:link, #tabnav a:visited
+{
+	float: left;
+	background: #f3f3f3;
+	font-size: 15px; 
+	font-weight: bold;
+	padding: 2px 10px 2px 10px;
+	margin-right: 4px;
+	border: 1px solid #ccc;
+	text-decoration: none;
+	color: #666;
+}
+
+#tabnav a:link.active, #tabnav a:visited.active
+{
+	border-bottom: 1px solid #fff;
+	background: #fff;
+	color: #000;
+}
+
+#tabnav a:hover
+{
+	background: #fff;
+}

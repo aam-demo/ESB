@@ -1,0 +1,70 @@
+BODY {margin:0; padding:0}
+BODY, TD {font-size: 10pt; font-family:Arial,sans-serif}
+TABLE {border-collapse: collapse}
+IMG {border:0}
+
+/* contain float = "overflow:auto; clear:both; zoom:1" ; zoom for IE6 (force hasLayout)*/
+#locTabs {overflow:auto; clear:both; zoom:1; margin-bottom:3px} 
+#orgTabs {overflow:auto; clear:both; zoom:1; margin-bottom:3px}
+
+.loc {font-size:10pt; font-weight:bold; padding:2 6; margin-right:1; float:left; cursor:pointer; 
+      border: 1px solid gray; border-top: 2px solid gray}
+.locHover {border-top: 2px solid yellow; color: blue} 
+.locSelected {border-top: 2px solid yellow; color: blue}
+
+.org {font-size:10pt;  font-weight:bold; padding:2 4; margin-right:1; float:left; cursor:pointer;
+      border: 1px solid gray; border-top: 2px solid gray}
+.orgHover {border-top: 2px solid yellow; color: blue} 
+.orgSelected {border-top: 2px solid yellow; color: blue} 
+
+#statusTable 
+{border:1px solid red}
+
+#statusEditPopup
+{visibility:hidden; position:absolute; z-index:99; width:310; color:white; background-color:red; border: 1px solid black; padding:4px; font-weight:bold}
+
+#statusEditPopup DIV
+{font-weight:bold}
+
+#empInfoTooltip
+{visibility:hidden; position:absolute; z-index:100; width:240; background-color:yellow; border:1px solid white; padding:2px}
+
+#empInfoPopup
+{visibility:hidden; position:absolute; z-index:100; width:400; overflow:visible; background-color:cyan; border: 2px solid black; padding:2px}
+
+#editname 
+{letter-spacing:1px; font-size:12pt}
+
+TABLE.TopLegend TD {font-size:9pt}
+
+TABLE.statusHead
+{background-color:black; color:white }
+
+TABLE.statusRow 
+{border-bottom:1px solid black}
+
+.statusRow TD, .statusHead TD
+{padding:2px; font-weight:bold; }
+
+.StatusIn
+{background-color:#fefefe} /*white b.g.*/
+
+.StatusUnavailable
+{background-color: #3399FF}  /*{background-color:#99ff99}*/
+
+.StatusOut
+{background-color: #808080}  /*{background-color:#cccccc}*/
+
+A.textfieldDefaultSetter 
+{ color:Green; font-size:14pt; font-weight:bold; text-decoration:none }
+
+
+/*
+.loc {font-size:13pt; background-color:cyan; padding:4; margin-right:6; float:left; cursor:pointer}
+.locHover {background-color:#6699cc} 
+.locSelected {background-color:#6699cc}
+
+.org {font-size:11pt; background-color:cyan;padding:3; margin-right:4; float:left; cursor:pointer}
+.orgHover {background-color:#6699cc} 
+.orgSelected {background-color:#6699cc}
+*/

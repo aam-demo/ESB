@@ -1,0 +1,76 @@
+﻿<%@ Master Language="VB" %>
+
+<script runat="server">
+
+	Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)
+		Me.displayDate.Text = Now.ToString("dddd, MMMM d, yyyy")
+		
+	End Sub
+</script>
+
+<html>
+<head runat="server">
+<asp:ContentPlaceHolder id="head" runat="server">
+</asp:ContentPlaceHolder>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+body {margin:0; padding: 0; background: #cccccc}
+BODY, TD {font-size: 9pt; font-family: Verdana,Arial,sans-serif}
+input {vertical-align:middle}
+select {font-size:10px}
+img {border:0}
+
+/*A {font-weight:bold; text-decoration:underline}
+A:hover {text-decoration:none}*/
+ul {margin-top:1px; margin-bottom:1px; margin-left:20px}
+li {margin-bottom:4px}
+
+div.MainContent {border-top:solid 1px #999999;}
+.altsectionhead {padding:3px 3px 3px 8px; font-weight:bold; font-size:13px; color:#ffffff; width:100%; margin-bottom:10px; background-color:#485889}
+
+ul.resources {margin-left:28px}
+
+a.homelink {font-weight:bold; color:#485889}
+a.homelink:hover {text-decoration:none}
+a.homelink:visited {color:#485889}
+
+.pagetitle, .pageheader {font-weight:bold; font-size:18px; color:#485889; padding-left:20px; padding-bottom:5px}
+</style> 
+</head>
+<body>
+
+<table width="978" border="0" cellpadding="0" cellspacing="0" align=center 
+	style="border: 1px solid black; background:white">
+<tr valign=top><td>
+ 
+	<table border="0" cellpadding="0" cellspacing="0" width=978 height=80 bgcolor=#485889><tr>
+		<td>
+		<div style="margin:12px">[ intranet header ]</div>
+		</td>
+		</tr></table>
+	
+	<table width="978" border="0" cellpadding="0" cellspacing="0">
+	<tr height=50>
+	<td align=left>
+	
+<div class="pagetitle" style="font-weight: bold;">
+	<asp:Literal ID=displayDate runat=server />
+</div>
+
+	</td>
+	</tr>
+	</table>
+
+<div class="MainContent" align=left>
+	<div style="padding:15px">
+
+	  <asp:ContentPlaceHolder id="PlaceHolder1" runat="server">  
+	  </asp:ContentPlaceHolder>
+
+	</div>
+</div>
+
+</td></tr></table> 
+
+</body>
+</html>

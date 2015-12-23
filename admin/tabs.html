@@ -1,0 +1,44 @@
+﻿<table width=850>
+<tr valign=top >
+<td>
+
+<h2> 
+<img src="../resources/images/app_logo.gif" style="vertical-align:middle; margin:3">
+Status Board Admin </h2>
+
+</td>
+
+<td align=right >
+
+	<img src=../resources/images/acrobat.gif align=baseline> 
+	<a href="/global/helpfiles/StatusBoard/eiostatusboard_user_guide_admin_mode.pdf" target=newHW001>Help</a>
+
+	<div style="font-size:8pt"><%= App.versionDescription  %></div>
+	
+	<div style="font-weight:bold"><a href="mailto:dev_team@rimarchitects.com?Subject=Status Board Bug">report bugs</a></div>
+
+</td>
+</tr></table>
+
+<div id="container">
+
+<ul id="tabnav">
+	<li><a href="admin_empl.aspx" id=edit>Edit</a></li>
+	<li><a href="admin_insert.aspx" id=insert>Insert</a></li>
+	<li><a href="admin_photo.aspx" id=photos>Photos</a></li>
+	<li><a href="admin_undelete.aspx" id=undelete>UnDelete</a></li>
+</ul>
+
+</div>
+
+<script>
+	//class="active"
+	$(document).ready(function() {
+		if (location.href.indexOf("admin_empl") >= 0) $("#tabnav #edit").attr("class", "active")
+		if (location.href.indexOf("admin_insert") >= 0) $("#tabnav #insert").attr("class", "active")
+		if (location.href.indexOf("admin_photo") >= 0) $("#tabnav #photos").attr("class", "active")
+		if (location.href.indexOf("admin_undelete") >= 0) $("#tabnav #undelete").attr("class", "active")
+	
+	});
+
+</script>
